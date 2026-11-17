@@ -1,0 +1,2 @@
+-keep class com.smartbus.app.models.** { *; }
+-keep class com.google.firebase.** { *; }

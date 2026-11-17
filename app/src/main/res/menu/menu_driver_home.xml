@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_driver_map"
+        android:icon="@drawable/ic_map"
+        android:title="@string/driver_map"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_driver_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/driver_profile"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/btn_logout"
+        app:showAsAction="never" />
+
+</menu>

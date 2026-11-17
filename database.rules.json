@@ -1,0 +1,62 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null && (auth.uid == $uid || root.child('users').child(auth.uid).child('role').val() == 'admin')"
+      }
+    },
+    "passengers": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null && (auth.uid == $uid || root.child('users').child(auth.uid).child('role').val() == 'admin')"
+      }
+    },
+    "drivers": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null && (auth.uid == $uid || root.child('users').child(auth.uid).child('role').val() == 'admin')"
+      }
+    },
+    "buses": {
+      ".read": "auth != null",
+      ".write": "auth != null && (root.child('users').child(auth.uid).child('role').val() == 'admin' || root.child('users').child(auth.uid).child('role').val() == 'driver')"
+    },
+    "routes": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'"
+    },
+    "stops": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'"
+    },
+    "liveLocations": {
+      ".read": "auth != null",
+      "$busId": {
+        ".write": "auth != null && (root.child('users').child(auth.uid).child('role').val() == 'driver' || root.child('users').child(auth.uid).child('role').val() == 'admin')"
+      }
+    },
+    "trips": {
+      ".read": "auth != null",
+      ".write": "auth != null && (root.child('users').child(auth.uid).child('role').val() == 'driver' || root.child('users').child(auth.uid).child('role').val() == 'admin')"
+    },
+    "tickets": {
+      ".read": "auth != null",
+      "$ticketId": {
+        ".write": "auth != null"
+      }
+    },
+    "feedback": {
+      ".read": "auth != null",
+      "$feedbackId": {
+        ".write": "auth != null"
+      }
+    },
+    "complaints": {
+      ".read": "auth != null",
+      "$complaintId": {
+        ".write": "auth != null"
+      }
+    }
+  }
+}

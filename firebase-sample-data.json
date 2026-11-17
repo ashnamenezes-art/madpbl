@@ -1,0 +1,136 @@
+{
+  "buses": {
+    "BUS001": {
+      "busId": "BUS001",
+      "busName": "Express Metro Line",
+      "busNumber": "MH-12-AB-1234",
+      "busType": "AC",
+      "currentLatitude": 18.5204,
+      "currentLongitude": 73.8567,
+      "driverId": "DRV001",
+      "isActive": true,
+      "lastUpdated": 1731888000000,
+      "routeId": "ROUTE001",
+      "totalSeats": 42
+    },
+    "BUS002": {
+      "busId": "BUS002",
+      "busName": "Airport Shuttle Express",
+      "busNumber": "MH-12-CD-5678",
+      "busType": "AC",
+      "currentLatitude": 18.5793,
+      "currentLongitude": 73.9089,
+      "driverId": "DRV002",
+      "isActive": true,
+      "lastUpdated": 1731888000000,
+      "routeId": "ROUTE002",
+      "totalSeats": 35
+    },
+    "BUS003": {
+      "busId": "BUS003",
+      "busName": "City Center Shuttle",
+      "busNumber": "MH-12-EF-9012",
+      "busType": "Non-AC",
+      "currentLatitude": 18.5314,
+      "currentLongitude": 73.8446,
+      "driverId": "DRV003",
+      "isActive": true,
+      "lastUpdated": 1731888000000,
+      "routeId": "ROUTE001",
+      "totalSeats": 50
+    }
+  },
+  "routes": {
+    "ROUTE001": {
+      "distanceKm": 18.5,
+      "destinationStop": "Tech Park Hinjawadi",
+      "estimatedDuration": 45,
+      "fareAmount": 30.0,
+      "isActive": true,
+      "routeId": "ROUTE001",
+      "routeName": "Route 1: Central Station to Tech Park",
+      "sourceStop": "Central Station",
+      "totalStops": 5
+    },
+    "ROUTE002": {
+      "distanceKm": 24.0,
+      "destinationStop": "Airport Terminal",
+      "estimatedDuration": 55,
+      "fareAmount": 50.0,
+      "isActive": true,
+      "routeId": "ROUTE002",
+      "routeName": "Route 2: City Center to Airport Terminal",
+      "sourceStop": "City Center",
+      "totalStops": 4
+    }
+  },
+  "stops": {
+    "STOP001": {
+      "address": "Opposite Railway Junction, Pune",
+      "latitude": 18.5284,
+      "longitude": 73.8744,
+      "routeId": "ROUTE001",
+      "stopId": "STOP001",
+      "stopName": "Central Station",
+      "stopOrder": 1
+    },
+    "STOP002": {
+      "address": "Shivaji Nagar Bus Terminus",
+      "latitude": 18.5314,
+      "longitude": 73.8446,
+      "routeId": "ROUTE001",
+      "stopId": "STOP002",
+      "stopName": "Shivaji Nagar",
+      "stopOrder": 2
+    },
+    "STOP003": {
+      "address": "Near University Main Gate",
+      "latitude": 18.5529,
+      "longitude": 73.8262,
+      "routeId": "ROUTE001",
+      "stopId": "STOP003",
+      "stopName": "University Circle",
+      "stopOrder": 3
+    },
+    "STOP004": {
+      "address": "Aundh Road Center",
+      "latitude": 18.5615,
+      "longitude": 73.8078,
+      "routeId": "ROUTE001",
+      "stopId": "STOP004",
+      "stopName": "Aundh Chowk",
+      "stopOrder": 4
+    },
+    "STOP005": {
+      "address": "Phase 1 Main Circle, Hinjawadi",
+      "latitude": 18.5912,
+      "longitude": 73.7389,
+      "routeId": "ROUTE001",
+      "stopId": "STOP005",
+      "stopName": "Tech Park Hinjawadi",
+      "stopOrder": 5
+    }
+  },
+  "liveLocations": {
+    "BUS001": {
+      "busId": "BUS001",
+      "driverId": "DRV001",
+      "heading": 85.0,
+      "latitude": 18.5400,
+      "longitude": 73.8350,
+      "speed": 34.5,
+      "timestamp": 1731888100000,
+      "tripStatus": "active"
+    },
+    "BUS002": {
+      "busId": "BUS002",
+      "driverId": "DRV002",
+      "heading": 42.0,
+      "latitude": 18.5700,
+      "longitude": 73.8950,
+      "speed": 40.0,
+      "timestamp": 1731888100000,
+      "tripStatus": "active"
+    }
+  }
+}
